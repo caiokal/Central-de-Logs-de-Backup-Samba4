@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="titulo">
-        <h1>Central de Logs e Auditoria</h1>
+        <h1>Central de Auditoria Samba4</h1>
 	<h2>HOSTNAME: <?php echo gethostname();?> -  IP: <?php echo $_SERVER['SERVER_ADDR'];?></h2>
 	<h3><?php echo $DateAndTime = date('d-m-Y h:i: a', time());?></h3>
     </header>
