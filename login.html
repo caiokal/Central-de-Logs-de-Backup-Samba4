@@ -10,9 +10,9 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="index.php" method="post">
+
             <div class="input-field">
-                <input type="text" id="nome">
+                <input type="text" id="login">
                 <label for="nome">Usuário:</label>
             </div>
             <div class="input-field">
@@ -20,9 +20,32 @@
                 <label for="senha">Senha:</label>
             </div>
             <div class="entrar">
-                <button>Entrar</button>
+            <button input type="submit" onclick=logar(); return false>Entrar</button>
+
+
             </div>
+        </form>
 </body>
+
+<script>
+
+
+    function logar(){
+
+        var login = document.getElementById('login').value;
+        var senha = document.getElementById('senha').value;
+
+        if(login == "admin" && senha == "admin"){
+            alert('Sucesso');
+            location.href = "index.php";
+        }else{
+            alert('Usuario ou senha incorretos');
+        }
+
+    }
+
+</script>
+
 <footer>
     <p class="copyright">&copy; Copyright Projeto Empresa Livre - 2022 </p>
       </footer>
