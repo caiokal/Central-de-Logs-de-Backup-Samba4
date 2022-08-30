@@ -23,7 +23,7 @@
   	</section>
     <ul class="voltar">
         <li>
-          <h2><a href="index.php"></h2>
+          <h2><a href="home.php"></h2>
           <img width="120px" height="100px" src="/img/voltar.png">
         </li>
 </ul>
