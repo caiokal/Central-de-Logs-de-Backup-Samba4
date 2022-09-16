@@ -20,30 +20,14 @@
                 <label for="senha">Senha:</label>
             </div>
             <div class="entrar">
-            <button input type="submit" onclick=logar(); return false>Entrar</button>
+            <button input type="submit" onclick=Login(); return false>Entrar</button>
 
 
             </div>
         </form>
 </body>
 
-<script>
-
-
-    function logar(){
-
-        var login = document.getElementById('login').value;
-        var senha = document.getElementById('senha').value;
-
-        if(login == "admin" && senha == "admin"){
-            location.href = "home.php";
-        }else{
-            alert('Usuario ou senha incorretos');
-        }
-
-    }
-
-</script>
+<script src="main.js"></script>
 
 <footer>
     <p class="copyright">&copy; Copyright Projeto Empresa Livre - 2022 </p>
